@@ -1,0 +1,226 @@
+/****************************************************
+* Bootstrap "lazy Sass"
+****************************************************/
+::-moz-selection,
+::selection {
+    background-color: var(--sc-primary);
+    color: #ffffff;
+}
+
+a {
+    color: var(--sc-primary);
+}
+
+a:hover {
+    color: var(--sc-secondary);
+}
+
+.form-control:focus {
+    border-color: var(--sc-secondary-light);
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.form-select:focus {
+    border-color: var(--sc-secondary-light);
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.form-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.form-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: var(--sc-primary);
+}
+
+.form-range::-webkit-slider-thumb:active {
+    background-color: var(--sc-secondary-light);
+}
+
+.form-range::-moz-range-thumb {
+    background-color: var(--sc-primary);
+}
+
+.form-range::-moz-range-thumb:active {
+    background-color: var(--sc-secondary-light);
+}
+
+.btn-check:focus + .btn, .btn:focus {
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.btn-primary {
+    background-color: var(--sc-primary);
+    border-color: var(--sc-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--sc-secondary);
+    border-color: var(--sc-secondary);
+}
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+    background-color: var(--sc-secondary);
+    border-color: var(--sc-secondary);
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
+    background-color: var(--sc-secondary);
+    border-color: var(--sc-box-shadow);
+}
+
+.btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.btn-primary:disabled, .btn-primary.disabled {
+    background-color: var(--sc-primary);
+    border-color: var(--sc-primary);
+}
+
+/* temp (bsv4 only) **********************************/
+.btn-primary:focus, .btn-primary.focus {
+    background-color: var(--sc-secondary);
+    border-color: var(--sc-secondary);
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: var(--sc-primary);
+    border-color: var(--sc-primary);
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+/* temp (bsv4 only) **********************************/
+
+.btn-outline-primary {
+    color: var(--sc-primary);
+    border-color: var(--sc-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--sc-primary);
+    border-color: var(--sc-primary);
+}
+
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+    background-color: var(--sc-primary);
+    border-color: var(--sc-primary);
+}
+
+.btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.btn-outline-primary:disabled, .btn-outline-primary.disabled {
+    color: var(--sc-primary);
+    background-color: transparent;
+}
+
+.btn-link {
+    color: var(--sc-primary);
+}
+
+.btn-link:hover {
+    color: var(--sc-secondary);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: var(--sc-primary);
+}
+
+.dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
+    background-color: var(--sc-primary);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: var(--sc-primary);
+}
+
+.accordion-button:focus {
+    border-color: var(--sc-secondary-light);
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.page-link {
+    color: var(--sc-primary);
+}
+
+.page-link:hover {
+    color: var(--sc-secondary);
+}
+
+.page-link:focus {
+    color: var(--sc-secondary);
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.page-item.active .page-link {
+    background-color: var(--sc-primary);
+    border-color: var(--sc-primary);
+}
+
+.alert-primary {
+    border-color: var(--sc-secondary-light);
+}
+
+.progress-bar {
+    background-color: var(--sc-primary);
+}
+
+.list-group-item.active {
+    background-color: var(--sc-primary);
+    border-color: var(--sc-primary);
+}
+
+.btn-close:focus {
+    box-shadow: 0 0 0 0.25rem var(--sc-box-shadow);
+}
+
+.link-primary {
+    color: var(--sc-primary);
+}
+
+.link-primary:hover, .link-primary:focus {
+    color: var(--sc-secondary);
+}
+
+.border-primary {
+    border-color: var(--sc-primary) !important;
+}
+
+.text-primary {
+    color: var(--sc-primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--sc-primary) !important;
+}
+
+.modal-backdrop {
+    background-color: var(--sc-background-light);
+}
+
+.modal-backdrop.show {
+    opacity: 0.6;
+}
+
+.modal-content {
+    border: 2px solid #ddd;
+}

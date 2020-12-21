@@ -1,0 +1,29 @@
+release:
+  draft: true
+  prerelease: auto
+project_name: ddda-save-corrupter
+builds:
+  -
+    main: ./cmd/ddda-save-corrupter/ddda-save-corrupter.go
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - windows
+    goarch:
+      - amd64
+    ldflags: -X "main.AppVersion={{.Version}}_{{.Commit}}"
+archives:
+  -
+    wrap_in_directory: false
+    format: tar.gz
+    format_overrides:
+      - goos: windows
+        format: zip
+    name_template: "{{.ProjectName}}_{{.Version}}_{{.Os}}"
+    replacements:
+      linux: Linux
+      windows: Windows
+      amd64: 64bit
+    files:
+      - none*
