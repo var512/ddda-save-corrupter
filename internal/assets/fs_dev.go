@@ -6,4 +6,6 @@ import (
 	"net/http"
 )
 
-var Assets http.FileSystem = http.Dir("web/build")
+var WebDir = "__invalid__"
+
+var Assets http.FileSystem = http.Dir(WebDir)

@@ -47,7 +47,7 @@ jobs:
 
       - name: Generate assets FS
         run: |
-          go run -tags=dev ./tools/assets/generate.go
+          go run -tags=dev -ldflags="-X 'github.com/var512/ddda-save-corrupter/internal/assets.WebDir=web/build'" ./tools/assets/generate.go
         shell: bash
 
       - name: Run GoReleaser

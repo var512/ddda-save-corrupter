@@ -12,7 +12,7 @@ builds:
       - windows
     goarch:
       - amd64
-    ldflags: -X "main.AppVersion={{.Version}}_{{.Commit}}"
+    ldflags: -X "main.AppVersion={{.Version}}_{{.Commit}}" -X 'github.com/var512/ddda-save-corrupter/internal/assets.WebDir=web/build'
 archives:
   -
     wrap_in_directory: false
