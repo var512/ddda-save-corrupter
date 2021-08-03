@@ -20,7 +20,7 @@ func preflightMiddleware(next http.Handler) http.Handler {
 	fn := func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		w.Header().Set("Access-Control-Allow-Credentials", "false")
-		w.Header().Set("Access-Control-Allow-Origin", "http://"+Host+":"+Port)
+		w.Header().Set("Access-Control-Allow-Origin", CorsAllowOrigin)
 		w.Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
 		w.Header().Set("Access-Control-Allow-Headers", "Accept, Accept-Encoding, Content-Type, Content-Length")
 

@@ -40,14 +40,14 @@ jobs:
 
       - name: Build web
         run: |
-          cd web
+          cd web-react
           npm i --prefer-offline --no-audit
           npm run-script build
         shell: bash
 
       - name: Generate assets FS
         run: |
-          go run -tags=dev ./tools/assets/generate.go
+          go run -tags=dev -ldflags="-X 'github.com/var512/ddda-save-corrupter/internal/assets.WebDir=web-react/build'" ./tools/assets/generate.go
         shell: bash
 
       - name: Run GoReleaser

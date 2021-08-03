@@ -29,6 +29,8 @@ const (
 	Port = "3333"
 )
 
+var CorsAllowOrigin = "http://" + Host + ":" + Port
+
 // State for forced single session with no client storage.
 type State struct {
 	// Parsed data from the sav userfile.
